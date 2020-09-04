@@ -11,4 +11,4 @@ Today I Learned
 |-|-|
 |2020/08/22|[GCP: docker machine](./2020/08/22.md)|
 |2020/09/03|[DNS & nameserver](./2020/09/03-dns-n-nameserver.md)|
-|2020/09/04|[Github Actions](04-github-actions.md)|
+|2020/09/04|[Github Actions](./2020/09/04-github-actions.md)|
