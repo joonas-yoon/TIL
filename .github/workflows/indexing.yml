@@ -21,7 +21,7 @@ jobs:
         env:
           DIF: ${{ env.DIF }}
         run: |
-          MSG=`git log -1 --pretty=%B | head -1 | awk '{print "|" strftime("%Y/%m/%d") "|" $0 "|" }'`
+          MSG=`git log -1 --pretty=%B | head -1 | awk -v PATH=$DIF '{print "|" strftime("%Y/%m/%d") "|[" $0 "](./" PATH ")|" }'`
           git config --global user.name 'Joona Yoon'
           git config --global user.email 'joonas-yoon@users.noreply.github.com'
           echo $MSG >> README.md
