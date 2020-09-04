@@ -14,7 +14,7 @@ jobs:
       - name: Check diff
         shell: bash
         run: |
-          echo ::set-env name=DIF::`git diff HEAD HEAD~1 --name-only | egrep [0-9]+\/`
+          echo ::set-env name=DIF::`git diff HEAD HEAD~1 --name-only --diff-filter=A | egrep [0-9]+\/`
 
       - name: Commit and Push changes
         if: ${{ env.DIF }}
