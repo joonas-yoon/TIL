@@ -12,7 +12,7 @@
 
 화살표 함수는 ES6에서 추가된 문법이다. 화살표 함수는 항상 이름이 없는 "익명"이다.
 
-```text
+```javascript
 (param1, param2, …, paramN) => { statements }
 (param1, param2, …, paramN) => expression
 // 다음과 동일함:  => { return expression; }
@@ -29,7 +29,7 @@ singleParam => { statements }
 
 함수 정의를 어떻게 표현하는 지의 대한 문법이므로, 아래 실행 결과로 확인해봤다.
 
-```text
+```javascript
 > function f(){
   console.log(1);
   return 2;
@@ -51,7 +51,7 @@ singleParam => { statements }
 
 그럼 이 익명 함수에서 사용하는 `this`는 대체 무엇을 가리킬까.
 
-```text
+```javascript
 > function A() {
   this.count = 0;
   setInterval(() => {this.count++;}, 1000);

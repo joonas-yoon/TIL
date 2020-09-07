@@ -2,7 +2,7 @@
 
 C언어에서 가변인자와 같은 기능이다. 문법은 다음과 같다.
 
-```text
+```javascript
 function f(...args) {
   // ...
 }
@@ -18,7 +18,7 @@ function f(...args) {
 
 그리고 `...<name>` 에 해당하는 부분만 `Array`로 넘어간다.
 
-```text
+```javascript
 function f(tag, ...msg) {
    return tag +": " + msg.join('/');
 }
