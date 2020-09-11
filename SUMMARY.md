@@ -29,7 +29,7 @@
     * [State Pattern](design-pattern/undefined-3/state-pattern.md)
     * [Strategy Pattern](design-pattern/undefined-3/strategy-pattern.md)
     * [Template Method Pattern](design-pattern/undefined-3/template-method-pattern.md)
-* [Logs/ETC.](logs-etc./README.md)
+* [Logs/ETC](logs-etc./README.md)
   * [2020/09/04](logs-etc./04-github-actions.md)
   * [2020/08/22](logs-etc./22-gcp-docker-machine.md)
   * [2020/09/03](logs-etc./03-dns-n-nameserver.md)
