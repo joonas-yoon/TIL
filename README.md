@@ -6,3 +6,7 @@ description: Joonas의 Today I Learned
 
 > Today I Learned
 
+![](.gitbook/assets/thumbnail.png)
+
+
+
