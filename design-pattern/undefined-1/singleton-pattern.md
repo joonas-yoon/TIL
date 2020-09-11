@@ -1,3 +1,7 @@
+---
+description: 싱글턴 패턴(Singleton pattern)
+---
+
 # Singleton Pattern
 
 ## 싱글턴 패턴\(Singleton pattern\)
@@ -70,9 +74,7 @@ public Keyboard {
 
 메모리에 계속 떠있다보니, 싱글톤으로 만든 인스턴스가 무거우면 문제가 된다.
 
-
-
-### Links
+## Links
 
 * [https://gmlwjd9405.github.io/2018/07/06/singleton-pattern.html](https://gmlwjd9405.github.io/2018/07/06/singleton-pattern.html)
 * [https://jeong-pro.tistory.com/86](https://jeong-pro.tistory.com/86)
