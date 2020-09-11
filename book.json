@@ -1,0 +1,13 @@
+{
+    "title": "Today Joonas Learned",
+    "author": "Joona Yoon",
+    "gitbook": "3.2.3",
+    "language": "ko",
+    "root": "./",
+    "plugins": [ "thumbnail" ],
+    "pluginsConfig": {
+        "thumbnail": {
+            "path": "./.gitbook/assets/thumbnail.png"
+        }
+    }
+}
