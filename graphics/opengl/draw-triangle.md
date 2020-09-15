@@ -152,6 +152,10 @@ public void onDrawFrame(GL10 unused) {
 
 Matrix.setLookAtM 의 파라미터는 [레퍼런스](https://developer.android.com/reference/android/opengl/Matrix#setLookAtM%28float%5B%5D,%2520int,%2520float,%2520float,%2520float,%2520float,%2520float,%2520float,%2520float,%2520float,%2520float%29)와 위 그림을 함께 보면 좋다.
 
+## Code
+
+[https://github.com/joonas-yoon/android-opengl-example/tree/142dcbab1815e6ec25f5954493a07c088f27552c](https://github.com/joonas-yoon/android-opengl-example/tree/142dcbab1815e6ec25f5954493a07c088f27552c)
+
 ## Links
 
 * [https://developer.android.com/training/graphics/opengl/shapes](https://developer.android.com/training/graphics/opengl/shapes)

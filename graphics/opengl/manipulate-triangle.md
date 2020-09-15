@@ -6,7 +6,11 @@ description: Android에서 OpenGL ES 2.0으로 객체를 터치한 만큼 옮겨
 
 [이전에 그렸던 삼각형 객체](draw-triangle.md)를 터치\(Touch\)한 만큼 옮겨볼 것이다.
 
-[공식 문서와 예제](https://developer.android.com/training/graphics/opengl/motion)는 삼각형을 회전시키는 것이지만, 터치 움직임과 너무 맞지 않는 동작이다. 나는 삼각형을 움직이도록 하겠다.
+{% hint style="warning" %}
+[공식 문서와 예제](https://developer.android.com/training/graphics/opengl/motion)는 삼각형을 회전시키지만, 터치 움직임과 너무 맞지 않는 동작이다.
+
+나는 삼각형을 **움직이도록** 수정하였다.
+{% endhint %}
 
 ![\[&#xADF8;&#xB9BC; 1\] Translate Triangle](../../.gitbook/assets/android-opengl-translate.gif)
 
@@ -95,6 +99,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 추가로 살필 수 있는 부분으로는, `dx * 2f / screenHeight` 라는 수식이다. 
 
 터치의 변위값은 화면의 좌표계를 사용했다. 화면 비율에 맡게 가로/세로값으로 좌표계를 수정했었으니 그에 맞게 다시 변환해준 것이다. 
+
+## Code
+
+[https://github.com/joonas-yoon/android-opengl-example/tree/924058f8eb8fbbf566ffccc8e72c0cd308f800d6](https://github.com/joonas-yoon/android-opengl-example/tree/924058f8eb8fbbf566ffccc8e72c0cd308f800d6)
 
 ## Links
 
