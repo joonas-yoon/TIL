@@ -33,4 +33,7 @@
   * [2020/09/04](logs-etc/04-github-actions.md)
   * [2020/08/22](logs-etc/22-gcp-docker-machine.md)
   * [2020/09/03](logs-etc/03-dns-n-nameserver.md)
+* [Graphics](graphics/README.md)
+  * [OpenGL](graphics/opengl/README.md)
+    * [Android에서 삼각형 그리기](graphics/opengl/android-opengl-draw-triangle.md)
 
