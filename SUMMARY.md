@@ -27,7 +27,7 @@
     * [Strategy Pattern](design-pattern/behavioral-patterns/strategy-pattern.md)
     * [Template Method Pattern](design-pattern/behavioral-patterns/template-method-pattern.md)
 * [Graphics](graphics/README.md)
-  * [OpenGL](graphics/opengl/README.md)
+  * [OpenGL ES](graphics/opengl/README.md)
     * [Android에서 삼각형 그리기](graphics/opengl/draw-triangle.md)
     * [Android에서 삼각형 움직이기](graphics/opengl/manipulate-triangle.md)
 * [Internet](internet/README.md)
