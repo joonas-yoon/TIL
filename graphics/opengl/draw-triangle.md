@@ -2,7 +2,7 @@
 description: 'Android에서 OpenGL ES 2.0으로 삼각형을 정의하고, SurfaceView에 그려본다.'
 ---
 
-# Android에서 삼각형 그리기
+# 삼각형 그리기
 
 우선 **OpenGL ES**는 **3차원 공간**에서 좌표로 객체를 그린다.
 
@@ -33,7 +33,7 @@ public class Triangle {
     private final int vertexCount = triangleCoords.length / COORDS_PER_VERTEX;
     private final int vertexStride = COORDS_PER_VERTEX * 4; // 4 bytes per vertex
     
-    float color[] = { 0.63671875f, 0.76953125f, 0.22265625f, 0.0f };
+    float color[] = { 0.63671875f, 0.76953125f, 0.22265625f, 1.0f };
     
     public Triangle() {
         // initialize vertex byte buffer for shape coordinates

@@ -2,7 +2,7 @@
 description: Android에서 OpenGL ES 2.0으로 객체를 터치한 만큼 옮겨본다.
 ---
 
-# Android에서 삼각형 움직이기
+# 삼각형 움직이기
 
 [이전에 그렸던 삼각형 객체](draw-triangle.md)를 터치\(Touch\)한 만큼 옮겨볼 것이다.
 
