@@ -1,10 +1,10 @@
 ---
-description: Android에서 OpenGL ES 2.0으로 정사면체를 정의한다.
+description: Android에서 OpenGL ES 2.0으로 "알록달록한" 정사면체를 정의한다.
 ---
 
 # 정사면체 그리기
 
-[삼각형](draw-triangle.md)도 그려봤고, [사각형](undefined-1.md)도 그려봤으니, 이제 정사면체를 그려보자.  
+[삼각형](draw-triangle.md)도 그려봤고, [사각형](draw-polygon.md)도 그려봤으니, 이제 정사면체를 그려보자.  
 당연히 점의 좌표를 더 추가하면 된다.
 
 결과부터 보자면, 각 점의 좌표와 순서는 아래와 같다.
@@ -67,6 +67,8 @@ $$
 이는 fragment shader에서 _**uniform**_ 변수인 `vColor` 를 통해 같은 색상을 계속 그리기 때문이다. 정점의 위치에 상관없이 화면에 보이는 \(투영되는\) 지점에는 항상 `vColor` 가 찍히고 있는 것이다.
 
 각 정점들\(vertices\)마다 색상을 지정해서 그려지도록 바꿔보자.
+
+## 색 입히기
 
 ```java
 final int COLORS_PER_VERTEX = 4; // r, g, b, alpha 총 4개
