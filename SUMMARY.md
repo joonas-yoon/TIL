@@ -38,6 +38,7 @@
 * [Internet](internet/README.md)
   * [iOS/Safari](internet/ios-safari.md)
 * [Javascript](javascript/README.md)
+  * [async, defer 속성](javascript/async-defer.md)
   * [나머지 매개변수 \(Rest parameter\)](javascript/rest-parameter.md)
   * [화살표 함수 표현 \(arrow function expression\)](javascript/arrow-function-expression.md)
   * [Template Literals](javascript/template-literals.md)
