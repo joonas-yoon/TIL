@@ -43,6 +43,7 @@
   * [화살표 함수 표현 \(arrow function expression\)](javascript/arrow-function-expression.md)
   * [Template Literals](javascript/template-literals.md)
   * [TDZ \(Temporal Dead Zone\)](javascript/tdz-temporal-dead-zone.md)
+  * [Spread syntax \(...\)](javascript/spread-syntax-....md)
 * [Network](network/README.md)
   * [OSI 7 계층 모델](network/osi.md)
 * [Uncategorized](logs-etc/README.md)
