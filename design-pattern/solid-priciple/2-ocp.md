@@ -4,7 +4,7 @@ description: Open/Closed Principle (OCP; 개방-폐쇄 원칙)
 
 # 2. OCP
 
-## Open/Closed Principle \(OCP; 개방-폐쇄 원칙\)
+## Open/Closed Principle (OCP; 개방-폐쇄 원칙)
 
 > 소프트웨어 요소는 확장에는 열려 있으나, 변경에는 단혀 있어야 하다.
 
@@ -14,7 +14,7 @@ description: Open/Closed Principle (OCP; 개방-폐쇄 원칙)
 
 ### **확장에 대해 열려 있다.**
 
-> 이것은 모듈의 동작을 확장할 수 있다는 것을 의미한다. 
+> 이것은 모듈의 동작을 확장할 수 있다는 것을 의미한다.&#x20;
 >
 > 애플리케이션의 요구 사항이 변경될 때, 이 변경에 맞게 새로운 동작을 추가해 모듈을 확장할 수 있다. 즉, 모듈이 하는 일을 변경할 수 있다.
 
@@ -22,7 +22,7 @@ description: Open/Closed Principle (OCP; 개방-폐쇄 원칙)
 
 > 모듈의 소스 코드나 바이너리 코드를 수정하지 않아도 모듈의 기능을 확장하거나 변경할 수 있다.
 >
-> 그 모듈의 실행 가능한 바이너리 형태나 링크 가능한 라이브러리 \(예를 들어, Windows의 DLL, 자바의 jar ...\)를 건드릴 필요가 없다.
+> 그 모듈의 실행 가능한 바이너리 형태나 링크 가능한 라이브러리 (예를 들어, Windows의 DLL, 자바의 jar ...)를 건드릴 필요가 없다.
 
 ### 추상화
 
@@ -32,6 +32,5 @@ description: Open/Closed Principle (OCP; 개방-폐쇄 원칙)
 
 ## Links
 
-* [https://ko.wikipedia.org/wiki/SOLID\_\(객체\_지향\_설계\)](https://ko.wikipedia.org/wiki/SOLID_%28%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84%29)
-* [https://ko.wikipedia.org/wiki/개방-폐쇄\_원칙](https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%B0%A9-%ED%8F%90%EC%87%84_%EC%9B%90%EC%B9%99)
-
+* [https://ko.wikipedia.org/wiki/SOLID\_(객체\_지향\_설계)](https://ko.wikipedia.org/wiki/SOLID\_\(%EA%B0%9D%EC%B2%B4\_%EC%A7%80%ED%96%A5\_%EC%84%A4%EA%B3%84\))
+* [https://ko.wikipedia.org/wiki/개방-폐쇄\_원칙](https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%B0%A9-%ED%8F%90%EC%87%84\_%EC%9B%90%EC%B9%99)

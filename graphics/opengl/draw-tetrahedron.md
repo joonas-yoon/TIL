@@ -4,7 +4,7 @@ description: Android에서 OpenGL ES 2.0으로 "알록달록한" 정사면체를
 
 # 정사면체 그리기
 
-[삼각형](draw-triangle.md)도 그려봤고, [사각형](draw-polygon.md)도 그려봤으니, 이제 정사면체를 그려보자.  
+[삼각형](draw-triangle.md)도 그려봤고, [사각형](draw-polygon.md)도 그려봤으니, 이제 정사면체를 그려보자.\
 당연히 점의 좌표를 더 추가하면 된다.
 
 결과부터 보자면, 각 점의 좌표와 순서는 아래와 같다.
@@ -26,9 +26,9 @@ final short[] drawOrder = { // order to draw vertices
 
 한 변의 길이를 1로 만드는 계산식을 위해, 반지름이 15인 구를 외심으로 하는 정사면체를 구할 것이다.
 
-정사면체의 꼭짓점 중 z축 위에 있는 점을 A, 그리고 그 아래로 삼각형을 이루는 점을 B, C, D 라고 하자. 그리고 이 정사면체의 중심 O를 \(0, 0, 0\)으로 정의할 것이다.
+정사면체의 꼭짓점 중 z축 위에 있는 점을 A, 그리고 그 아래로 삼각형을 이루는 점을 B, C, D 라고 하자. 그리고 이 정사면체의 중심 O를 (0, 0, 0)으로 정의할 것이다.
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](<../../.gitbook/assets/image (8).png>)
 
 {% hint style="warning" %}
 OpenGL 에서는 화면을 xy평면으로 하기 때문에, 일반적으로 생각하는 유클리디안 공간 좌표에서 그리는 모양과 다르게 나오는 것에 주의해야 한다.
@@ -50,23 +50,23 @@ $$
 변CD 만 봐도 길이가 6인 것을 알 수 있다. 한 변의 길이가 1이 될 수 있도록 전부 6으로 나누면, 한 변의 길이가 1인 정사면체의 좌표가 된다.
 
 {% hint style="info" %}
-다른 방법으로는, model matrix를 1/6 만큼 스칼라곱 스케일링\(scaling\)하는 방법도 있다.
+다른 방법으로는, model matrix를 1/6 만큼 스칼라곱 스케일링(scaling)하는 방법도 있다.
 {% endhint %}
 
-`drawOrder` 는 각 면들이 바깥쪽을 앞면으로 할 수 있도록 반시계 방향으로 정의한 것이다. \(이후에 Face culling 단계에서 이 부분이 적용된다\)
+`drawOrder` 는 각 면들이 바깥쪽을 앞면으로 할 수 있도록 반시계 방향으로 정의한 것이다. (이후에 Face culling 단계에서 이 부분이 적용된다)
 
 {% hint style="info" %}
-3차원 primitive의 정점들\(vertices\)이 잘 정의되었고 그려지고 있는 지 확인하기 위해서,  
-터치 이벤트에 원래 튜토리얼에 제공되는 "회전\(rotate\)" 매트릭스 연산을를 사용하였다.
+3차원 primitive의 정점들(vertices)이 잘 정의되었고 그려지고 있는 지 확인하기 위해서,\
+터치 이벤트에 원래 튜토리얼에 제공되는 "회전(rotate)" 매트릭스 연산을를 사용하였다.
 {% endhint %}
 
-![](../../.gitbook/assets/fragtetrahedron.gif)
+![](../../.gitbook/assets/fragTetrahedron.gif)
 
 정사면체의 정점들은 잘 구성되었지만, 입체감이 전혀 없어서 "추측 하기에" 정사면체이다.
 
-이는 fragment shader에서 _**uniform**_ 변수인 `vColor` 를 통해 같은 색상을 계속 그리기 때문이다. 정점의 위치에 상관없이 화면에 보이는 \(투영되는\) 지점에는 항상 `vColor` 가 찍히고 있는 것이다.
+이는 fragment shader에서 _**uniform**_ 변수인 `vColor` 를 통해 같은 색상을 계속 그리기 때문이다. 정점의 위치에 상관없이 화면에 보이는 (투영되는) 지점에는 항상 `vColor` 가 찍히고 있는 것이다.
 
-각 정점들\(vertices\)마다 색상을 지정해서 그려지도록 바꿔보자.
+각 정점들(vertices)마다 색상을 지정해서 그려지도록 바꿔보자.
 
 ## 색 입히기
 
@@ -124,14 +124,14 @@ protected final String fragmentShaderCode =
     "}";
 ```
 
-![](../../.gitbook/assets/coloredtetrahedron.gif)
+![](../../.gitbook/assets/coloredTetrahedron.gif)
 
-이것은 _**attribute**_ 타입 때문에 가능하다. vertex shader에서 정점별로 다른 값\(적절히 보간\(interpolation\)된 값\)을 가지고 있다. 값이 보간되는 방식은, 정점과 정점 사이에 \(vector로 인해\) 선이 그려지는 원리를 생각해보면 된다.
+이것은 _**attribute**_ 타입 때문에 가능하다. vertex shader에서 정점별로 다른 값(적절히 보간(interpolation)된 값)을 가지고 있다. 값이 보간되는 방식은, 정점과 정점 사이에 (vector로 인해) 선이 그려지는 원리를 생각해보면 된다.
 
 이것을 다시 _**varying**_ 타입의 변수를 통 fragment shader로 전달하면 그 위치에 맞는 색상이 그려질 수 있는 것이다.
 
 {% hint style="success" %}
-vertex shader에서는 값을 읽고 쓰는 것이 모두 가능하지만,  
+vertex shader에서는 값을 읽고 쓰는 것이 모두 가능하지만,\
 fragment shader에서는 값을 읽는 것만 가능하다.
 {% endhint %}
 
@@ -155,4 +155,3 @@ GLES20.glEnableVertexAttribArray(mColorHandle);
 * [http://wanochoi.com/?p=1114](http://wanochoi.com/?p=1114)
 * [https://learnopengl.com/Advanced-OpenGL/Face-culling](https://learnopengl.com/Advanced-OpenGL/Face-culling)
 * [http://www.opengl-tutorial.org/kr/beginners-tutorials/tutorial-4-a-colored-cube/](http://www.opengl-tutorial.org/kr/beginners-tutorials/tutorial-4-a-colored-cube/)
-

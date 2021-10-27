@@ -4,7 +4,7 @@ description: 7 layers of the OSI Model
 
 # OSI 7 계층 모델
 
-이 모델은 **프로토콜을 기능별로 나눈 것**이다. 각 레이어\(Layer\)는 하위 레이어의 기능을 사용할 수 있다.
+이 모델은 **프로토콜을 기능별로 나눈 것**이다. 각 레이어(Layer)는 하위 레이어의 기능을 사용할 수 있다.
 
 레이어를 나눈 이유는 **통신의 과정을 단계별로 확인할 수 있기 때문**이다.
 
@@ -12,7 +12,7 @@ description: 7 layers of the OSI Model
 
 ![](https://www.coengoedegebure.com/content/images/2018/09/osimodel-3.gif)
 
-상위 4개 레이어는 _Host Layer_ 라고 불리고, 하위 3개 레이어는 _Media Layer_ 라고 불린다.
+상위 4개 레이어는 _Host Layer_ 라고 불리고, 하위 3개 레이어는 _Media Layer _라고 불린다.
 
 ## 7. **Application**
 
@@ -22,7 +22,7 @@ description: 7 layers of the OSI Model
 
 원격 파일 접근, 원격 프린트, 가상 터미널 등 사용자와 가장 닿아있는 영역이다. 응용 서비스나 프로세스가 이 레이어에서 동작한다.
 
-이 레이어에서 사용하는 프로토콜은 [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol), [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol), [DNS](https://en.wikipedia.org/wiki/Domain_Name_System), [Telnet](https://en.wikipedia.org/wiki/Telnet), [SSH](https://en.wikipedia.org/wiki/Secure_Shell), [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol), [POP](https://en.wikipedia.org/wiki/Post_Office_Protocol), [SNMP](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) 등이 있다.
+이 레이어에서 사용하는 프로토콜은 [HTTP](https://en.wikipedia.org/wiki/Hypertext\_Transfer\_Protocol), [FTP](https://en.wikipedia.org/wiki/File\_Transfer\_Protocol), [SMTP](https://en.wikipedia.org/wiki/Simple\_Mail\_Transfer\_Protocol), [DNS](https://en.wikipedia.org/wiki/Domain\_Name\_System), [Telnet](https://en.wikipedia.org/wiki/Telnet), [SSH](https://en.wikipedia.org/wiki/Secure\_Shell), [IMAP](https://en.wikipedia.org/wiki/Internet\_Message\_Access\_Protocol), [POP](https://en.wikipedia.org/wiki/Post\_Office\_Protocol), [SNMP](https://en.wikipedia.org/wiki/Simple\_Network\_Management\_Protocol) 등이 있다.
 
 ## 6. **Presentation**
 
@@ -52,9 +52,8 @@ Transmission and reception of raw bit streams over a physical medium.
 
 ## Links
 
-* [https://en.wikipedia.org/wiki/OSI\_model](https://en.wikipedia.org/wiki/OSI_model)
-* [https://ko.wikipedia.org/wiki/OSI\_모형](https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95)
+* [https://en.wikipedia.org/wiki/OSI\_model](https://en.wikipedia.org/wiki/OSI\_model)
+* [https://ko.wikipedia.org/wiki/OSI\_모형](https://ko.wikipedia.org/wiki/OSI\_%EB%AA%A8%ED%98%95)
 * [https://www.coengoedegebure.com/osi-model/](https://www.coengoedegebure.com/osi-model/)
 * [https://mycodecamp.blogspot.com/2019/10/7-layer-of-osi-model.html](https://mycodecamp.blogspot.com/2019/10/7-layer-of-osi-model.html)
 * 응용 서비스나 프로세스가 바로 응용계층에서 동작
-

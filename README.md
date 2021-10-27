@@ -8,5 +8,3 @@ description: Joonas의 Today I Learned
 
 ![](.gitbook/assets/thumbnail.png)
 
-
-

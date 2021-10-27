@@ -4,7 +4,7 @@ description: Single Responsibility Principle (SRP; 단일 책임 원칙)
 
 # 1. SRP
 
-## Single Responsibility Principle \(SRP; 단일 책임 원칙\)
+## Single Responsibility Principle (SRP; 단일 책임 원칙)
 
 > 하나의 클래스나 모듈은 단 하나의 책임만 가져야 한다.
 
@@ -34,10 +34,9 @@ Element get() {
 }
 ```
 
-즉, 기능을 더 쪼갤 수 없을 만큼 아토믹\(atomic\)한 것이 좋다.
+즉, 기능을 더 쪼갤 수 없을 만큼 아토믹(atomic)한 것이 좋다.
 
 ## Links
 
-* [https://ko.wikipedia.org/wiki/SOLID\_\(객체\_지향\_설계\)](https://ko.wikipedia.org/wiki/SOLID_%28%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84%29)
-* [https://ko.wikipedia.org/wiki/단일\_책임\_원칙](https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9D%BC_%EC%B1%85%EC%9E%84_%EC%9B%90%EC%B9%99)
-
+* [https://ko.wikipedia.org/wiki/SOLID\_(객체\_지향\_설계)](https://ko.wikipedia.org/wiki/SOLID\_\(%EA%B0%9D%EC%B2%B4\_%EC%A7%80%ED%96%A5\_%EC%84%A4%EA%B3%84\))
+* [https://ko.wikipedia.org/wiki/단일\_책임\_원칙](https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9D%BC\_%EC%B1%85%EC%9E%84\_%EC%9B%90%EC%B9%99)

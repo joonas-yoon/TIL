@@ -2,11 +2,11 @@
 description: '[...a] 와 같은 연산자에 대해서'
 ---
 
-# Spread syntax \(...\)
+# Spread syntax (...)
 
 
 
-{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_syntax" %}
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" %}
 
 ES6부터 생긴 문법으로, 코드를 작성할때나 어떤 솔루션들에서 종종 보인다.
 
@@ -39,4 +39,3 @@ b['x'] = 9;
 // a: {x: 1, y: 2}
 // b: {x: 9, y: 2}
 ```
-

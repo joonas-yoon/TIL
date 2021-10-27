@@ -4,9 +4,9 @@ description: 어댑터 패턴(Adapter Pattern)
 
 # Adapter Pattern
 
-## 어댑터 패턴\(Adapter Pattern\)
+## 어댑터 패턴(Adapter Pattern)
 
-> **어댑터 패턴**\(Adapter pattern\)은 클래스의 인터페이스를 사용자가 기대하는 다른 인터페이스로 변환하는 패턴으로, 호환성이 없는 인터페이스 때문에 함께 동작할 수 없는 클래스들이 함께 작동하도록 해준다.
+> &#x20;**어댑터 패턴**(Adapter pattern)은 클래스의 인터페이스를 사용자가 기대하는 다른 인터페이스로 변환하는 패턴으로, 호환성이 없는 인터페이스 때문에 함께 동작할 수 없는 클래스들이 함께 작동하도록 해준다.
 
 USB 어댑터를 떠올려보자.
 
@@ -22,7 +22,7 @@ USB 어댑터를 떠올려보자.
 
 * 클라이언트에게는 필요하지만, 그런 인터페이스는 없는 클래스를 어떻게 재사용하지?
 * 서로 호환되지 않는 인터페이스를 가진 클래스끼리 어떻게 동작시키지?
-* 어떤 클래스를 위한 대체 인터페이스\(alternative interface\)를 어떻게 제공하지?
+* 어떤 클래스를 위한 대체 인터페이스(alternative interface)를 어떻게 제공하지?
 
 보통 재사용이 힘든 원인은, 기존의 클래스와 클라이언트 둘의 인터페이스가 다르기 때문이다.
 
@@ -35,27 +35,27 @@ USB 어댑터를 떠올려보자.
 
 ### 구조
 
-두 가지 구조로 설명하는데, 상속\(inheritance\) 관계를 사용했는 지 포함\(composition\) 관계를 사용했는 지가 가장 핵심적인 차이이다.
+두 가지 구조로 설명하는데, 상속(inheritance) 관계를 사용했는 지 포함(composition) 관계를 사용했는 지가 가장 핵심적인 차이이다.
 
-#### Object adapter pattern 
+#### Object adapter pattern&#x20;
 
 먼저, 객체를 감싼다면 어댑터 패턴은 아래와 같다.
 
-![Object adapter pattern](https://www.cs.unc.edu/~stotts/GOF/hires/Pictures/adapt104.gif)
+![Object adapter pattern](https://www.cs.unc.edu/\~stotts/GOF/hires/Pictures/adapt104.gif)
 
-`Adapter` 클래스가 멤버 변수로 `Adaptee`를 가지고 있어서, 인터페이스에 맞게 동작시켜 호환하는 방법이다. \(포함 관계\)
+`Adapter` 클래스가 멤버 변수로 `Adaptee`를 가지고 있어서, 인터페이스에 맞게 동작시켜 호환하는 방법이다. (포함 관계)
 
-즉, 내부적으로 `adaptee.specRequest()` 와 같이 적절하게 호출시키는 것이다. `Client`의 입장에서 `Adaptee` 객체는 내부를 볼 수 없는 블랙박스\(blackbox\)가 된다.
+즉, 내부적으로 `adaptee.specRequest()` 와 같이 적절하게 호출시키는 것이다. `Client`의 입장에서 `Adaptee` 객체는 내부를 볼 수 없는 블랙박스(blackbox)가 된다.
 
 #### Class adapter pattern
 
-클래스 어댑터 패턴은 상속\(inferitance\) 관계로 클래스를 감싼다.
+클래스 어댑터 패턴은 상속(inferitance) 관계로 클래스를 감싼다.
 
-![Class adapter pattern](https://www.cs.unc.edu/~stotts/GOF/hires/Pictures/adapt106.gif)
+![Class adapter pattern](https://www.cs.unc.edu/\~stotts/GOF/hires/Pictures/adapt106.gif)
 
 `Adapter`가 `Target`과  `Adaptee` 클래스를 모두 상속해서 호환되도록 구현하여 동작시키는 것이다.
 
-그런데 이 방식은 다중 상속을 지원해야해서, JAVA\(JDK 1.8 이전\) 등에서는 불가능하다.
+그런데 이 방식은 다중 상속을 지원해야해서, JAVA(JDK 1.8 이전) 등에서는 불가능하다.
 
 ### 예시
 
@@ -82,7 +82,7 @@ class Android implements MicroUsbPhone {}
 
 두 스마트폰 모두 충전 기능을 가지고 있지만, 아이폰과 마이크로 USB 케이블밖에 없는 상황이라고 하자.
 
-그래서 충전기\(클라이언트\)에 꽂는 케이블\(인터페이스\)이 달라 연결할 수 없는 상태이다.
+그래서 충전기(클라이언트)에 꽂는 케이블(인터페이스)이 달라 연결할 수 없는 상태이다.
 
 * 아이폰 → 라이트닝 케이블 → 충전기
 * 안드로이드폰 → 마이크로 USB → 충전기
@@ -165,7 +165,7 @@ class LightningToMicroUsbAdapter implements MicroUsbPhone {
 
 이제 아래처럼 사용할 수 있다.
 
-* 아이폰 → 라이트닝 케이블 → \(어댑터\) → 마이크로 USB → 충전기
+* 아이폰 → 라이트닝 케이블 → (어댑터) → 마이크로 USB → 충전기
 
 ```java
 public class AdapterDemo {
@@ -197,12 +197,11 @@ public class AdapterDemo {
 
 ### 전체 코드 및 실행
 
-[https://repl.it/@joonasyoon/DesignPattern-Adapter\#Main.java](https://repl.it/@joonasyoon/DesignPattern-Adapter#Main.java)
+[https://repl.it/@joonasyoon/DesignPattern-Adapter#Main.java](https://repl.it/@joonasyoon/DesignPattern-Adapter#Main.java)
 
 ## Links
 
-* [https://en.wikipedia.org/wiki/Adapter\_pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
-* [https://www.cs.unc.edu/~stotts/GOF/hires/pat4afso.htm](https://www.cs.unc.edu/~stotts/GOF/hires/pat4afso.htm)
+* [https://en.wikipedia.org/wiki/Adapter\_pattern](https://en.wikipedia.org/wiki/Adapter\_pattern)
+* [https://www.cs.unc.edu/\~stotts/GOF/hires/pat4afso.htm](https://www.cs.unc.edu/\~stotts/GOF/hires/pat4afso.htm)
 * [https://yaboong.github.io/design-pattern/2018/10/15/adapter-pattern/](https://yaboong.github.io/design-pattern/2018/10/15/adapter-pattern/)
 * [https://stackoverflow.com/questions/9978477/difference-between-object-adapter-pattern-and-class-adapter-pattern](https://stackoverflow.com/questions/9978477/difference-between-object-adapter-pattern-and-class-adapter-pattern)
-

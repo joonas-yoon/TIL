@@ -4,7 +4,7 @@ description: Android에서 OpenGL ES 2.0으로 객체를 터치한 만큼 옮겨
 
 # 삼각형 움직이기
 
-[이전에 그렸던 삼각형 객체](draw-triangle.md)를 터치\(Touch\)한 만큼 옮겨볼 것이다.
+[이전에 그렸던 삼각형 객체](draw-triangle.md)를 터치(Touch)한 만큼 옮겨볼 것이다.
 
 {% hint style="warning" %}
 [공식 문서와 예제](https://developer.android.com/training/graphics/opengl/motion)는 삼각형을 회전시키지만, 터치 움직임과 너무 맞지 않는 동작이다.
@@ -12,9 +12,9 @@ description: Android에서 OpenGL ES 2.0으로 객체를 터치한 만큼 옮겨
 나는 삼각형을 **움직이도록** 수정하였다.
 {% endhint %}
 
-![\[&#xADF8;&#xB9BC; 1\] Translate Triangle](../../.gitbook/assets/android-opengl-translate.gif)
+![\[그림 1\] Translate Triangle](../../.gitbook/assets/android-opengl-translate.gif)
 
-기존 코드에서 변경되는 부분은 거의 없다. 렌더러\(Renderder\)에서 위치를 이동시키는 행렬을 하나 더 추가하고 그것을 카메라 뷰와 합치면 된다.
+기존 코드에서 변경되는 부분은 거의 없다. 렌더러(Renderder)에서 위치를 이동시키는 행렬을 하나 더 추가하고 그것을 카메라 뷰와 합치면 된다.
 
 먼저 터치 이벤트를 등록해야한다.
 
@@ -94,11 +94,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 터치의 변위값, 즉 드래그한 만큼 `mTranslateMatrix` 에 반영한다. 그리고 `onDrawFrame()` 에서, 이동을 위해 추가한 행렬 `mTranslateMatrix` 도 결합시켜 그리도록 한다.
 
-주의할 점은,  `mTranslateMatrix` 의 최초 상태를 단위 행렬\(Identity Matrix\)로 만들어주고 시작해야한다.
+주의할 점은,  `mTranslateMatrix` 의 최초 상태를 단위 행렬(Identity Matrix)로 만들어주고 시작해야한다.
 
-추가로 살필 수 있는 부분으로는, `dx * 2f / screenHeight` 라는 수식이다. 
+추가로 살필 수 있는 부분으로는, `dx * 2f / screenHeight` 라는 수식이다.&#x20;
 
-터치의 변위값은 화면의 좌표계를 사용했다. 화면 비율에 맡게 가로/세로값으로 좌표계를 수정했었으니 그에 맞게 다시 변환해준 것이다. 
+터치의 변위값은 화면의 좌표계를 사용했다. 화면 비율에 맡게 가로/세로값으로 좌표계를 수정했었으니 그에 맞게 다시 변환해준 것이다.&#x20;
 
 ## Code
 
@@ -108,4 +108,3 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 * [https://developer.android.com/training/graphics/opengl/motion](https://developer.android.com/training/graphics/opengl/motion)
 * [https://android.googlesource.com/platform/development/.../example/android/opengl](https://android.googlesource.com/platform/development/+/master/samples/OpenGL/HelloOpenGLES20/src/com/example/android/opengl)
-

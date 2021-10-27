@@ -4,22 +4,22 @@ description: Android에서 OpenGL ES 2.0으로 다각형을 정의하고 그려�
 
 # 다각형 그리기
 
-삼각형에서는 좌표들\(coords\) 배열을 9개\(3차원 점 \* 3개의 점\)만 정의했으니,  더 많은 좌표를 추가하면 다각형이 될 것이다.
+삼각형에서는 좌표들(coords) 배열을 9개(3차원 점 \* 3개의 점)만 정의했으니,  더 많은 좌표를 추가하면 다각형이 될 것이다.
 
 하지만 그리는 것은 다르다.
 
 OpenGL에서는 그리는 모드에 따라 각 점을 해석하는 방식이 다르다.
 
-![&#xADF8;&#xB9BC; 1. OpenGL Drawing Primitives](../../.gitbook/assets/image%20%287%29.png)
+![그림 1. OpenGL Drawing Primitives](<../../.gitbook/assets/image (7).png>)
 
-[이전에 삼각형을 그릴 때](draw-triangle.md) 사용한 모드는 `GL_TRIANGLES` 이다.  
+[이전에 삼각형을 그릴 때](draw-triangle.md) 사용한 모드는 `GL_TRIANGLES` 이다.\
 3개씩 묶어서 만들어지는 삼각형 면을 채우는 방식이다.
 
 이 모드로 사각형을 그린다면, 점의 순서를 아래와 같이 바꿔야한다.
 
-![&#xADF8;&#xB9BC; 2. &#xB450; &#xAC1C;&#xC758; &#xC0BC;&#xAC01;&#xD615;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xC0AC;&#xAC01;&#xD615; &#xADF8;&#xB9AC;&#xAE30;](../../.gitbook/assets/image%20%286%29.png)
+![그림 2. 두 개의 삼각형을 사용하여 사각형 그리기](<../../.gitbook/assets/image (6).png>)
 
-\(x1, y1, z1\)를 1번 정점이라고 하면, 사각형을 그리기 위해서는 \(1번-2번-3번\)의 삼각형 하나와, \(1번, 3번, 4번\)의 삼각형, 총 2개의 삼각형을 그려야한다.
+(x1, y1, z1)를 1번 정점이라고 하면, 사각형을 그리기 위해서는 (1번-2번-3번)의 삼각형 하나와, (1번, 3번, 4번)의 삼각형, 총 2개의 삼각형을 그려야한다.
 
 여기에는 방법이 다시 2가지가 있는데, 하나는 `coords[]` 배열에 점을 3개씩 끊어서 순서대로 직접 모두 저장하거나, 점의 순서를 저장해두고 나중에 렌더링할 때 그리는 순서를 결정하는 방법이 있다.
 
@@ -91,6 +91,5 @@ public void onDrawFrame(GL10 unused) {
 
 ## Links
 
-* \(figure 1\) [https://developer.android.com/training/graphics/opengl/shapes](https://developer.android.com/training/graphics/opengl/shapes)
-* \(figure 2\) [http://cse.csusb.edu/tongyu/courses/cs420/notes/drawing.php](http://cse.csusb.edu/tongyu/courses/cs420/notes/drawing.php)
-
+* (figure 1) [https://developer.android.com/training/graphics/opengl/shapes](https://developer.android.com/training/graphics/opengl/shapes)
+* (figure 2) [http://cse.csusb.edu/tongyu/courses/cs420/notes/drawing.php](http://cse.csusb.edu/tongyu/courses/cs420/notes/drawing.php)

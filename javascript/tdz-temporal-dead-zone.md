@@ -1,4 +1,4 @@
-# TDZ \(Temporal Dead Zone\)
+# TDZ (Temporal Dead Zone)
 
 먼저 아래 코드를 살펴보자.
 
@@ -26,9 +26,7 @@ function greet(who) {
 
 `let`, `const`, `class` 키워드는 TDZ의 영향을 받으므로 주의해야겠다.
 
-##  Links
+## &#x20;Links
 
 {% embed url="https://dmitripavlutin.com/javascript-variables-and-temporal-dead-zone/" %}
-
-
 

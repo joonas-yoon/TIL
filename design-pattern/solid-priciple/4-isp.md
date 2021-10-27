@@ -4,15 +4,15 @@ description: Interface Segregation Principle (ISP; 인터페이스 분리 원칙
 
 # 4. ISP
 
-## Interface Segregation Principle \(ISP; 인터페이스 분리 원칙\)
+## Interface Segregation Principle (ISP; 인터페이스 분리 원칙)
 
 > 특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다.
 
 ### 위반 사례
 
-이 ATM기는 총 3개의 모듈을 가지고 있는데, 어떤 거래\(transaction\)에 대해서 입금\(Deposit\), 출금\(Withdrawal\), 송금\(Transfer\) 모듈을 각자 만들었다.
+이 ATM기는 총 3개의 모듈을 가지고 있는데, 어떤 거래(transaction)에 대해서 입금(Deposit), 출금(Withdrawal), 송금(Transfer) 모듈을 각자 만들었다.
 
-![](https://flylib.com/books/4/444/1/html/2/images/12_5.jpg)
+![](https://flylib.com/books/4/444/1/html/2/images/12\_5.jpg)
 
 각 모듈은 전문화된 기능을 가지기 위해 분리되었지만, 무언가 이상하다.
 
@@ -92,7 +92,7 @@ public class TransferTransaction extends Transaction implements UI {
 
 각 모듈에 맞게 **인터페이스를 분리**하여 해결할 수 있다.
 
-![](https://flylib.com/books/4/444/1/html/2/images/12_6.jpg)
+![](https://flylib.com/books/4/444/1/html/2/images/12\_6.jpg)
 
 `UI` 인터페이스를 모듈별로 분리하였다. 이제 각 모듈은 사용하는 기능들만 구현하면 된다.
 
@@ -187,7 +187,7 @@ public void testFunction() {
 
 ### 주의 사항
 
-개발을 하다보면 클라이언트가 사용하지 않는 메소드를 추가하여, 하나의 인터페이스가 거대해지는 일이 잦다.  
+개발을 하다보면 클라이언트가 사용하지 않는 메소드를 추가하여, 하나의 인터페이스가 거대해지는 일이 잦다.\
 쪼개려다보면 애매한 상황도 많고 파일이 많아지는게 또 피곤한 일이라, 굉장히 위배하기 쉬운 원칙이다.
 
 ### 전체 구조 및 코드
@@ -198,9 +198,8 @@ public void testFunction() {
 
 ## Links
 
-* [https://ko.wikipedia.org/wiki/SOLID\_\(객체\_지향\_설계\)](https://ko.wikipedia.org/wiki/SOLID_%28%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84%29)
+* [https://ko.wikipedia.org/wiki/SOLID\_(객체\_지향\_설계)](https://ko.wikipedia.org/wiki/SOLID\_\(%EA%B0%9D%EC%B2%B4\_%EC%A7%80%ED%96%A5\_%EC%84%A4%EA%B3%84\))
 * [http://stg-tud.github.io/sedc/Lecture/ws16-17/3.2-ISP.pdf](http://stg-tud.github.io/sedc/Lecture/ws16-17/3.2-ISP.pdf)
 * [https://reflectoring.io/interface-segregation-principle/](https://reflectoring.io/interface-segregation-principle/)
-* [The Interface Segregation Principle, Robert C. Martin, C++ Report, June 1996](https://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi&hl=en)
+* [The Interface Segregation Principle, Robert C. Martin, C++ Report, June 1996](https://docs.google.com/a/cleancoder.com/viewer?a=v\&pid=explorer\&chrome=true\&srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi\&hl=en)
 * [https://flylib.com/books/en/4.444.1.79/1/](https://flylib.com/books/en/4.444.1.79/1/)
-

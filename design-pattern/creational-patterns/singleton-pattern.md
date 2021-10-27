@@ -4,7 +4,7 @@ description: 싱글턴 패턴(Singleton pattern)
 
 # Singleton Pattern
 
-## 싱글턴 패턴\(Singleton pattern\)
+## 싱글턴 패턴(Singleton pattern)
 
 싱글턴 패턴은 인스턴스를 하나만 생성하여 사용하는 패턴이다.
 
@@ -23,7 +23,7 @@ public Config {
 }
 ```
 
-이 설정을 다른 클래스\(캐릭터, 키보드 관리자 등\)에서도 사용하고 싶다.
+이 설정을 다른 클래스(캐릭터, 키보드 관리자 등)에서도 사용하고 싶다.
 
 ```java
 public Character {
@@ -78,4 +78,3 @@ public Keyboard {
 
 * [https://gmlwjd9405.github.io/2018/07/06/singleton-pattern.html](https://gmlwjd9405.github.io/2018/07/06/singleton-pattern.html)
 * [https://jeong-pro.tistory.com/86](https://jeong-pro.tistory.com/86)
-
