@@ -49,6 +49,7 @@
 * [Network](network/README.md)
   * [OSI 7 계층 모델](network/osi.md)
 * [Uncategorized](logs-etc/README.md)
+  * [2021/12/07](logs-etc/2021-12-07.md)
   * [2020/09/03](logs-etc/03-dns-n-nameserver.md)
   * [2020/09/04](logs-etc/04-github-actions.md)
   * [2020/08/22](logs-etc/22-gcp-docker-machine.md)
